@@ -41,6 +41,14 @@ nav {
     justify-content: center;
 }
 
+.black-box2 {
+    width: calc(30% - 20px); /* Adjusted width calculation */
+    height: 400px;
+    background-color: dimgrey;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
 #timeDisplay {
     color: white; /* Text color for timeDisplay */
     text-align: center;
@@ -90,22 +98,22 @@ nav {
 
 #todoList, #weeklyTodoList, #longTermTodoList {
     list-style: none;
-    padding: 0;
+    padding-right: 10px;
 }
 
 #todoList li, #weeklyTodoList li, #longTermTodoList li {
-    margin-bottom: 10px;
-    position: flex;
-    
+    margin-bottom: 1
+        0px;
+    color: white;
+    display: flex;  
 }
 
 #todoList input[type="checkbox"], #weeklyTodoList input[type="checkbox"], #longTermTodoList input[type="checkbox"] {
     margin-right: 10px;
 }
 
-#addTaskContainer {
+#addTaskContainer, #addWeeklyTaskContainer, #addLongTermTaskContaine {
     margin-top: 10px;
-    display: flex;
 }
 
 #newTaskInput {
@@ -117,8 +125,22 @@ nav {
     position: absolute;
     text-align: left;
     justify-content: space-between;
+   
 }
+        #sun, #moon {
+            transform: translateY(-50%, -50%);
+            display: center;
+            width: 100px;
+            height: 100px;
+            background-color: #FFD700; /* Sun color */
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(255, 223, 0, 0.8); /* Sun glow effect */
+            margin: 0 auto;
+            color: white;
+            
+        }
 
-@media screen and (max-width:800px) {
-    
-}
+        #moon {
+            background-color: #708090; /* Moon color */
+            box-shadow: 0 0 20px rgba(112, 128, 144, 0.8); /* Moon glow effect */
+        }
