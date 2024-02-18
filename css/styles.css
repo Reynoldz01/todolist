@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.grid-container {
+    text-align: center;
+    display: flex; /* Updated to flex container */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Distribute items evenly */
+}
+
+.black-box {
+    width: calc(30% - 20px); /* Adjusted width calculation */
+    height: 400px;
+    background-color: dimgrey;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#timeDisplay {
+    color: white; /* Text color for timeDisplay */
+    text-align: center;
+}
+
+#timeDisplay .time {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#timeDisplay .day {
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+#progressContainer, #weekContainer {
+    position: relative;
+    width: 70%;
+    background-color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+#progressBarContainer, #weekProgressBarContainer {
+    height: 30px;
+}
+
+#progressBar, #progressBar2{
+    width: 100%;
+    height: 95%;
+    background-color: white;
+    margin: 3px;
+}
+
+#progressText, #progressText2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px; /* Adjust as needed for spacing */
+    color: white;
+}
+
+
+#todoList, #weeklyTodoList, #longTermTodoList {
+    list-style: none;
+    padding: 0;
+}
+
+#todoList li, #weeklyTodoList li, #longTermTodoList li {
+    margin-bottom: 10px;
+    position: flex;
+    
+}
+
+#todoList input[type="checkbox"], #weeklyTodoList input[type="checkbox"], #longTermTodoList input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#addTaskContainer {
+    margin-top: 10px;
+    display: flex;
+}
+
+#newTaskInput {
+    flex-grow: 0;
+    margin-right: 10px;
+}
+
+.h2 {
+    position: absolute;
+    text-align: left;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:800px) {
+    
+}
